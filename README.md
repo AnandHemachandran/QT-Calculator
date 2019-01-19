@@ -1,5 +1,5 @@
 # QT-Calculator
-[]!(Images/Calculator.png)
+![](Images/Calculator.png)
 
 
 Basic Arthmetic Operations are enabled in this Calculator.
