@@ -241,40 +241,43 @@ void MainWindow::on_Back_clicked(){
     ui->result_text->setText(QString::fromStdString(display));
 }
 
+//This is the Trigonometric functions: in the math.h library works on radiant,
+//while in the Calculator is set to decimal so I need a conversion from 
+//decimal to radiant of the angle set on the display.
 void MainWindow::on_sin_clicked(){
-    r=sin( ui->result_text->text().toDouble() );
+    r=sin( ui->result_text->text().toDouble() * 3.14/180 );
     ui->result_text->clear();
     ui->result_text->setText( QString::number( r ) );
 }
 
 void MainWindow::on_cos_clicked(){
-    r=cos( ui->result_text->text().toDouble() );
+    r=cos( ui->result_text->text().toDouble() * 3.14/180 );
     ui->result_text->clear();
     ui->result_text->setText( QString::number( r ) );
 }
 
 void MainWindow::on_tan_clicked(){
-    r=tan( ui->result_text->text().toDouble() );
+    r=tan( ui->result_text->text().toDouble() * 3.14/180 );
     ui->result_text->clear();
     ui->result_text->setText( QString::number( r ) );
 }
 
 
 void MainWindow::on_asin_clicked(){
-    r=asin( ui->result_text->text().toDouble() );
+    r=asin( ui->result_text->text().toDouble() * 3.14/180 );
     ui->result_text->clear();
     ui->result_text->setText( QString::number( r ) );
 }
 
 void MainWindow::on_acos_clicked(){
-    r=acos( ui->result_text->text().toDouble() );
+    r=acos( ui->result_text->text().toDouble() * 3.14/180 );
     ui->result_text->clear();
     ui->result_text->setText( QString::number( r ) );
 }
 
 
 void MainWindow::on_atan_clicked(){
-    r=atan( ui->result_text->text().toDouble() );
+    r=atan( ui->result_text->text().toDouble() * 3.14/180 s);
     ui->result_text->clear();
     ui->result_text->setText( QString::number( r ) );
 }
